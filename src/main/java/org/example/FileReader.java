@@ -10,18 +10,19 @@ public class FileReader {
         char [] array = new char[4];
         reader.read(array);
         int index = -1;
-            for (char c: array) {
-                if (  c  ==  '0' ) {
-                    index = c;
-                    break;
-                }
+        for (char c: array) {
+            if (  c  ==  '0' ) {
+                index = c;
+                break;
             }
-        if (index  != -1) {
-                System.out.println("Файл создан "  );
-            } else {
-                System.out.println(" ");
-            }
-        reader.close();
         }
+        if (index  != -1) {
+            System.out.println("Файл создан "  );
+        } else {
+            System.out.println(" ");
+        }
+        reader.close();
     }
+}
+
 
