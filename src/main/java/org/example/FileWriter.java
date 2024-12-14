@@ -21,7 +21,7 @@ public class FileWriter {
         java.io.FileWriter writer = new java.io.FileWriter(file, true);
         writer.write(  message + '\n' + message2 + '\n');
         writer.close();
-
     }
 }
+
 
